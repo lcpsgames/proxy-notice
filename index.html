@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title></title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="styles.css">
+  <title>Redirect Button</title>
 </head>
 <body>
+  <p>By clicking Launch you agree to use the proxy responsibly. This proxy is designed to keep the users information private and safe.</p>
+  <button id="redirectButton">Launch</button>
 
-    <h1>Proxy will drop tonight.</h1>
+  <script>
+    const redirectButton = document.getElementById("redirectButton");
 
-    <p>By using this proxy you agree to use it responsibly. This proxy is designed to be used on a personal computer.</p>
-
-
-    <script src="script.js"></script>
+    redirectButton.addEventListener("click", function() {
+      window.location.href = "https://cardclubs.net";
+    });
+  </script>
 </body>
 </html>
